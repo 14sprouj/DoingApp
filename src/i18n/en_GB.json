@@ -84,6 +84,9 @@
 			"onSubmitError": "Unable to send message.",
 			"error": "Error occurred!",
 			"cancel": "Cancel"
+		},
+		"react": {
+			"welcome": "Welcome to React Native"
 		}
 	}
 }

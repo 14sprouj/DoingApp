@@ -1,0 +1,40 @@
+$themes: (
+  light: (
+    text: #333333,
+    bg: #ffffff,
+    brand: #567567,
+	purple: #7c238c,
+  ),
+  dark: (
+    text: #ffffff,
+    bg: #333333,
+    brand: #abcabc,
+	purple: #42033D,
+  ),
+);
+
+@mixin themify($themes) {
+  @each $name, $values in $themes {
+    .#{$name}-theme {
+      $theme-map: $values !global;
+      @content;
+    }
+  }
+}
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+@include themify($themes) {
+  p {
+    color: themed("text");
+    background-color: themed("bg");
+  }
+  button {
+    background-color: themed("brand");
+    color: themed("text");
+  }
+  a {
+    color: themed("brand");
+  }
+};

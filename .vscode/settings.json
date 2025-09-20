@@ -1,0 +1,18 @@
+{
+	"peacock.color": "#8EF9F3",
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#befcf8",
+		"activityBar.background": "#befcf8",
+		"activityBar.foreground": "#15202b",
+		"activityBar.inactiveForeground": "#15202b99",
+		"commandCenter.border": "#15202b99",
+		"sash.hoverBorder": "#befcf8",
+		"titleBar.activeBackground": "#8ef9f3",
+		"titleBar.activeForeground": "#15202b",
+		"titleBar.inactiveBackground": "#8ef9f399",
+		"titleBar.inactiveForeground": "#15202b99"
+	},
+	"npm.packageManager": "pnpm",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
+}
