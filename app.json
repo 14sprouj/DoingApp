@@ -1,30 +1,40 @@
 {
-  "expo": {
-    "name": "DoingApp",
-    "slug": "DoingApp",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+	"expo": {
+		"name": "Doing",
+		"displayName": "Doing",
+		"slug": "Doing",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "light",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"plugins": [],
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.doingapp",
+			"infoPlist": {
+				"NSHealthShareUsageDescription": "This app uses HealthKit to track your activity and workouts."
+			}
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"package": "com.doingapp",
+			"permissions": [
+				"BODY_SENSORS_BACKGROUND",
+				"BODY_SENSORS",
+				"ACTIVITY_RECOGNITION"
+			]
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		}
+	}
 }
